@@ -2,7 +2,7 @@ import { View, Text, StyleSheet } from "react-native";
 import { s, vs } from "react-native-size-matters";
 import BackButton from "../components/BackButton";
 import PaymentList from "../components/PaymentList";
-import CreditCard from "../components/CreditCard";
+import BankCardBox from "../components/BankCardBox";
 
 const PaymentScreen = () => {
   return (
@@ -27,7 +27,9 @@ const PaymentScreen = () => {
         </Text>
       </View>
       <PaymentList />
-      <CreditCard />
+      <View style={{ paddingHorizontal: s(16) }}>
+        <BankCardBox />
+      </View>
     </View>
   );
 };
