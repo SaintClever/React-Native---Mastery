@@ -35,7 +35,7 @@ export default BankCardBox;
 const styles = StyleSheet.create({
   container: {
     backgroundColor: "#F7F8F9",
-    width: s(327),
+    // width: s(327),
     borderRadius: s(10),
     marginTop: vs(25),
     justifyContent: "center",

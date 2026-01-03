@@ -3,6 +3,7 @@ import { s, vs } from "react-native-size-matters";
 import BackButton from "../components/BackButton";
 import PaymentList from "../components/PaymentList";
 import BankCardBox from "../components/BankCardBox";
+import AddButton from "../components/AddButton";
 
 const PaymentScreen = () => {
   return (
@@ -29,29 +30,7 @@ const PaymentScreen = () => {
       <PaymentList />
       <View style={{ paddingHorizontal: s(16) }}>
         <BankCardBox />
-        <View
-          style={{
-            marginTop: vs(15),
-            width: s(327),
-            height: vs(62),
-            borderRadius: s(10),
-            borderWidth: 2,
-            borderColor: "#F0F5FA",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <Text
-            style={{
-              fontWeight: "semibold",
-              fontSize: s(14),
-              color: "#FF7622",
-              textAlign: "center",
-            }}
-          >
-            + ADD NEW
-          </Text>
-        </View>
+        <AddButton />
       </View>
     </View>
   );
