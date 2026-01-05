@@ -31,6 +31,34 @@ const PaymentScreen = () => {
       <View style={{ paddingHorizontal: s(16) }}>
         <BankCardBox />
         <AddButton />
+        <View
+          style={{
+            flexDirection: "row",
+            marginTop: vs(20),
+            gap: s(14),
+            alignItems: "center",
+          }}
+        >
+          <Text
+            style={{
+              fontWeight: 400,
+              fontSize: s(14),
+              color: "#A0A5BA",
+            }}
+          >
+            TOTAL:
+          </Text>
+          <Text
+            style={{
+              fontWeight: 400,
+              fontSize: s(30),
+              color: "#181C2E",
+            }}
+          >
+            $96
+          </Text>
+        </View>
+        <AddButton />
       </View>
     </View>
   );
