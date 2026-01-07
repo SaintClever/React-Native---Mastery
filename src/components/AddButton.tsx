@@ -6,9 +6,10 @@ interface AddButtonProps {
   bgColor: string;
   icon?: React.ReactNode;
   title: React.ReactNode;
+  fontColor: string;
 }
 
-const AddButton: FC<AddButtonProps> = ({ bgColor, icon, title }) => {
+const AddButton: FC<AddButtonProps> = ({ bgColor, icon, title, fontColor }) => {
   return (
     <TouchableOpacity
       style={{
@@ -23,7 +24,7 @@ const AddButton: FC<AddButtonProps> = ({ bgColor, icon, title }) => {
         marginTop: vs(15),
       }}
     >
-      {icon} {title}
+      {icon} <Text style={{ color: fontColor, fontSize: s(14) }}>{title}</Text>
     </TouchableOpacity>
   );
 };

@@ -33,10 +33,9 @@ const PaymentScreen = () => {
         <BankCardBox />
         <AddButton
           bgColor="#FFF"
+          fontColor="#FF7622"
           icon={<Feather name="plus" size={24} color="#FF7622" />}
-          title={
-            <Text style={{ color: "#FF7622", fontSize: s(14) }}>Add New</Text>
-          }
+          title={"Add New"}
         />
         <View
           style={{
@@ -67,11 +66,8 @@ const PaymentScreen = () => {
         </View>
         <AddButton
           bgColor="#FF7622"
-          title={
-            <Text style={{ color: "#FFFFFF", fontSize: s(14) }}>
-              Pay & Confirm
-            </Text>
-          }
+          fontColor="#FFFFFF"
+          title={"Pay & Confirm"}
         />
       </View>
     </View>
