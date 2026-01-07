@@ -4,6 +4,7 @@ import BackButton from "../components/BackButton";
 import PaymentList from "../components/PaymentList";
 import BankCardBox from "../components/BankCardBox";
 import AddButton from "../components/AddButton";
+import Feather from "@expo/vector-icons/Feather";
 
 const PaymentScreen = () => {
   return (
@@ -30,7 +31,13 @@ const PaymentScreen = () => {
       <PaymentList />
       <View style={{ paddingHorizontal: s(16) }}>
         <BankCardBox />
-        <AddButton />
+        <AddButton
+          bgColor="#FFF"
+          icon={<Feather name="plus" size={24} color="#FF7622" />}
+          title={
+            <Text style={{ color: "#FF7622", fontSize: s(14) }}>Add New</Text>
+          }
+        />
         <View
           style={{
             flexDirection: "row",
@@ -58,7 +65,14 @@ const PaymentScreen = () => {
             $96
           </Text>
         </View>
-        <AddButton />
+        <AddButton
+          bgColor="#FF7622"
+          title={
+            <Text style={{ color: "#FFFFFF", fontSize: s(14) }}>
+              Pay & Confirm
+            </Text>
+          }
+        />
       </View>
     </View>
   );
